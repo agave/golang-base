@@ -12,9 +12,9 @@ before_script:
 
 script:
   - docker build -t base .
-  - docker tag base gypsydiver/golang-base:${TRAVIS_BRANCH}
-  - docker tag base gypsydiver/golang-base:${TRAVIS_BUILD_ID}
-  - docker tag base gypsydiver/golang-base
-  - docker push gypsydiver/golang-base:${TRAVIS_BRANCH}
-  - docker push gypsydiver/golang-base:${TRAVIS_BUILD_ID}
-  - docker push gypsydiver/golang-base
+  - docker tag base agavelab/golang-base:${TRAVIS_BRANCH}
+  - docker tag base agavelab/golang-base:${TRAVIS_BUILD_ID}
+  - docker tag base agavelab/golang-base
+  - docker push agavelab/golang-base:${TRAVIS_BRANCH}
+  - docker push agavelab/golang-base:${TRAVIS_BUILD_ID}
+  - docker push agavelab/golang-base
