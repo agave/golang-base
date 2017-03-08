@@ -13,8 +13,6 @@ before_script:
 script:
   - docker build -t base .
   - docker tag base agavelab/golang-base:${TRAVIS_BRANCH}
-  - docker tag base agavelab/golang-base:${TRAVIS_BUILD_ID}
-  - docker tag base agavelab/golang-base
+  - docker tag base agavelab/golang-base:latest
   - docker push agavelab/golang-base:${TRAVIS_BRANCH}
-  - docker push agavelab/golang-base:${TRAVIS_BUILD_ID}
-  - docker push agavelab/golang-base
+  - docker push agavelab/golang-base:latest
