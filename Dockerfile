@@ -8,5 +8,4 @@ RUN apk add -U --no-progress bash curl g++ gcc git make postgresql-client protob
 	&& unzip -q torus.zip \
 	&& mv torus bin/ \
 	&& rm torus.zip \
-	&& curl -# https://glide.sh/get | sh \
-    && go get github.com/mattes/migrate
+	&& curl -# https://glide.sh/get | sh
